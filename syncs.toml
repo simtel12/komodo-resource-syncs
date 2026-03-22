@@ -17,7 +17,7 @@ config.schedule = "Every day at 01:00"
 name = "Stage 1"
 enabled = true
 executions = [
-  { execution.type = "BackupCoreDatabase", execution.params = {}, enabled = true }
+  { execution.type = "BackupCoreDatabase", execution.params = {}, enabled = false }
 ]
 
 ##

@@ -56,16 +56,16 @@ repo = "simtel12/komodo-app-stacks"
 # ]
 
 ##
-# 
-# [[resource_sync]]
-# name = "komodo-app-stacks"
-# tags = ["sync"]
-# [resource_sync.config]
-# repo = "simtel12/komodo-app-stacks"
-# git_account = "simtel12"
-# webhook_enabled = false
-# resource_path = ["services", "common-vars.toml"]
-# include_variables = true
+
+[[resource_sync]]
+name = "komodo-app-stacks"
+tags = ["sync"]
+[resource_sync.config]
+repo = "simtel12/komodo-app-stacks"
+git_account = "simtel12"
+webhook_enabled = false
+resource_path = ["services", "common-vars.toml"]
+include_variables = true
 
 ##
 #

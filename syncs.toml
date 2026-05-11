@@ -68,15 +68,15 @@ resource_path = ["services", "common-vars.toml"]
 include_variables = true
 
 ##
-
-[[resource_sync]]
-name = "komodo-op-sync"
-tags = [
-  "infrastructure",
-  "1password-connect",
-  "sync"
-]
-[resource_sync.config]
-repo = "simtel12/deploy-komodo-op"
-git_account = "simtel12"
-resource_path = ["stack.toml"]
+#
+# [[resource_sync]]
+# name = "komodo-op-sync"
+# tags = [
+#   "infrastructure",
+#   "1password-connect",
+#   "sync"
+# ]
+# [resource_sync.config]
+# repo = "simtel12/deploy-komodo-op"
+# git_account = "simtel12"
+# resource_path = ["stack.toml"]

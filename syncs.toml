@@ -21,24 +21,24 @@ executions = [
 ]
 
 ##
-# 
-# [[procedure]]
-# name = "Deploy if changed"
-# tags = ["sync"]
-# 
-# [[procedure.config.stage]]
-# name = "Stage 1"
-# enabled = true
-# executions = [
-#   { execution.type = "RunSync", execution.params.sync = "komodo-app-stacks", enabled = true }
-# ]
-# 
-# [[procedure.config.stage]]
-# name = "Stage 2"
-# enabled = true
-# executions = [
-#   { execution.type = "BatchDeployStackIfChanged", execution.params.pattern = "*", enabled = true }
-# ]
+
+[[procedure]]
+name = "Deploy if changed"
+tags = ["sync"]
+
+[[procedure.config.stage]]
+name = "Stage 1"
+enabled = true
+executions = [
+  { execution.type = "RunSync", execution.params.sync = "komodo-app-stacks", enabled = true }
+]
+
+[[procedure.config.stage]]
+name = "Stage 2"
+enabled = true
+executions = [
+  { execution.type = "BatchDeployStackIfChanged", execution.params.pattern = "*", enabled = true }
+]
 
 ##
 # 

@@ -64,7 +64,7 @@ tags = ["sync"]
 repo = "simtel12/komodo-app-stacks"
 git_account = "simtel12"
 webhook_enabled = false
-resource_path = ["services", "common-vars.toml"]
+resource_path = ["common-vars.toml", "services"]
 include_variables = true
 
 ##
